@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "browser-sync start --server --watch --files '*' --startPath src",
+		"test": "browser-sync start --server --watch --files '*.{html, js, css}' --startPath src",
 		"build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
 	},
 	"repository": {
