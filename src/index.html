@@ -1,35 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="/dist/output.css" rel="stylesheet">
 
-		<link href="../dist/output.css" rel="stylesheet" />
+    <title>Tic-Tac-Toe</title>
+    <script src = "app.js" defer></script>
+</head>
+<body>
+    <h1 class = "text-3xl text-center">Tic-Tac-Toe</h1>
 
-		<title>Tic-Tac-Toe</title>
-		<script src="app.js" defer></script>
-	</head>
-	<body>
-		<h1 class="text-3xl text-center">Tic-Tac-Toe</h1>
+        <h2 class = "text-center">Player o wins:</h2> 
+        <h2 id = "play1" class = "text-center"></h2>
+    
+        <h2 class = "text-center">Player x wins:</h2> 
+        <h2 id = "play2" class = "text-center" ></h2>
+ 
+    <br>
 
-		<h2 class="text-center">Player o wins:</h2>
-		<h2 id="play1" class="text-center"></h2>
+    <div id = "boardid" class = "grid items-center justify-items-center h-96 my-0 mx-auto w-96 grid-cols-3 grid-rows-3"></div>
+    <div id = "boardcellis" class = "flex justify-center items-center h-full w-full cursor-pointer"></div>
+    
 
-		<h2 class="text-center">Player x wins:</h2>
-		<h2 id="play2" class="text-center"></h2>
+    <h2 id = "hid" class = "text-center"></h2>
+    <br>
 
-		<br />
+</body>
 
-		<div
-			id="boardid"
-			class="grid items-center justify-items-center h-96 my-0 mx-auto w-96 grid-cols-3 grid-rows-3"
-		></div>
-		<div
-			id="boardcellis"
-			class="flex justify-center items-center h-full w-full cursor-pointer"
-		></div>
 
-		<h2 id="hid" class="text-center"></h2>
-		<br />
-	</body>
 </html>
