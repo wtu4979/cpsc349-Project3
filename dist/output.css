@@ -606,3 +606,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
+
+button {
+  position: absolute;
+  bottom: 30%;
+left: 49%
+
+}
