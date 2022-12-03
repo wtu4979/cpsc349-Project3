@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "browser-sync start --server --watch --files '*.{html, js, css}' --startPath src",
-		"build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+		"tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
@@ -18,7 +18,7 @@
 	"bugs": {
 		"url": "https://github.com/wtu4979/cpsc349-Project3/issues"
 	},
-	"homepage": "https://github.com/wtu4979/cpsc349-Project3#readme",
+	"homepage": "https://github.com/wtu4979/cpsc349-Project3/src",
 	"devDependencies": {
 		"tailwindcss": "^3.2.4"
 	},
