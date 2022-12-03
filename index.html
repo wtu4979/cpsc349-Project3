@@ -6,7 +6,7 @@
 
 		<link href="input.css" rel="stylesheet" />
 		<link href="output.css" rel="stylesheet" />
-		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./app.js" type="module"></script>
 		<title>Tic-Tac-Toe</title>
 	</head>
 	<body>
@@ -18,7 +18,7 @@
 		<h2 class="text-center">Player x wins:</h2>
 		<h2 id="play2" class="text-center"></h2>
 
-		<button onClick="resetGame()">Restart</button>
+		<button id="resetButton">Restart</button>
 		<br />
 
 		<div
@@ -32,6 +32,5 @@
 
 		<h2 id="hid" class="text-center"></h2>
 		<br />
-		<script src="./app.js" type="module"></script>
 	</body>
 </html>
