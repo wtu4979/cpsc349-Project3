@@ -4,10 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "browser-sync start --server --watch --files '*.{html, js, css}' --startPath src",
-		"tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+		"test": "browser-sync start --server --watch --files ./index.html",
+		"tailwind": "npx tailwindcss -i ./input.css -o ./output.css",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d build",
+		"start": "npm-run-all --parallel dev tailwind"
 	},
 	"repository": {
 		"type": "git",
