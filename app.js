@@ -101,13 +101,12 @@ function start() {
 	if (document.getElementById('play1').innerHTML === 'null') {
 		document.getElementById('play1').innerHTML = '0';
 	}
-
-	if (localStorage.getItem('savedPlayerX') === 'null') {
-		document.getElementById('play2').innerHTML = '0';
-	}
 	document.getElementById('play2').innerHTML = `${localStorage.getItem(
 		'savedPlayerX'
 	)}`;
+	if (document.getElementById('play2').innerHTML === 'null') {
+		document.getElementById('play2').innerHTML = '0';
+	}
 
 	if (localStorage.getItem('savedBoard')) {
 		// populate the board with the saved board
