@@ -89,20 +89,6 @@ function point() {
 	}
 }
 
-function resetGame() {
-	console.log('reseting game');
-	localStorage.removeItem('savedBoard');
-	localStorage.removeItem('savedTurn');
-	gameBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-	savedGameBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-	board = document.getElementById('boardid');
-	board.innerHTML = '';
-	document.getElementById('hid').innerHTML = '';
-	document.getElementById('play1').innerHTML = `${playerocount}`;
-	document.getElementById('play2').innerHTML = `${playerxcount}`;
-	start();
-}
-
 function start() {
 	turn = playero;
 	board = document.getElementById('boardid');
@@ -151,4 +137,20 @@ function start() {
 	document.body.appendChild(board);
 }
 
+function resetGame() {
+	console.log('reseting game');
+	localStorage.removeItem('savedBoard');
+	localStorage.removeItem('savedTurn');
+	gameBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+	savedGameBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+	board = document.getElementById('boardid');
+	board.innerHTML = '';
+	document.getElementById('hid').innerHTML = '';
+	document.getElementById('play1').innerHTML = `${playerocount}`;
+	document.getElementById('play2').innerHTML = `${playerxcount}`;
+	start();
+}
+
+let button = document.getElementById('resetButton');
+button.addEventListener('click', resetGame);
 start();
