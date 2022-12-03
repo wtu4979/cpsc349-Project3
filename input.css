@@ -13,3 +13,9 @@
 .moveturn-class:hover {
 	@apply bg-sky-400;
 }
+
+button {
+	position: absolute;
+	bottom: 30%;
+	left: 49%;
+}

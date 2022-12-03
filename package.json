@@ -4,10 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "browser-sync start --server --watch --files ./index.html",
+		"dev": "browser-sync start --server --watch --files ./index.html",
+		"test": "concurrently \"npx standard --fix\" \"vnu index.html\"",
 		"tailwind": "npx tailwindcss -i ./input.css -o ./output.css",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
 		"start": "npm-run-all --parallel dev tailwind"
 	},
 	"repository": {
